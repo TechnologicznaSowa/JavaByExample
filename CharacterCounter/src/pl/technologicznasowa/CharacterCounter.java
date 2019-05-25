@@ -3,6 +3,8 @@ package pl.technologicznasowa;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class CharacterCounter {
 
@@ -25,8 +27,13 @@ public class CharacterCounter {
         return characterCounter;
     }
 
-    public static void printCountedInput(Map<Character, Integer> characterCounter) {
-        for (Map.Entry<Character, Integer> entry : characterCounter.entrySet()) {
+	public static Map<Character, Long> countCharactersStream(String userInput) {
+		return userInput.chars().mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+	}
+
+    public static void printCountedInput(Map<Character, ? extends Number> characterCounter) {
+        for (Map.Entry<Character, ? extends Number> entry : characterCounter.entrySet()) {
             System.out.println("Sign: "+entry.getKey().toString()+" Count: "+entry.getValue());
         }
     }

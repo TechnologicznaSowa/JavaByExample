@@ -2,7 +2,7 @@ package pl.technologicznasowa;
 
 import java.util.Scanner;
 
-import static pl.technologicznasowa.CharacterCounter.countCharacters;
+import static pl.technologicznasowa.CharacterCounter.countCharactersStream;
 import static pl.technologicznasowa.CharacterCounter.printCountedInput;
 
 public class Main {
@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Input sentence: ");
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
-        printCountedInput(countCharacters(userInput));
+        printCountedInput(countCharactersStream(userInput));
     }
 
 }
