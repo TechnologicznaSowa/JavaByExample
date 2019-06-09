@@ -8,4 +8,5 @@ Jak to powtarzał jeden z moich profesorów, istnieją tysiące sposobów aby na
 <ul>
   <li><a href="https://github.com/TechnologicznaSowa/JavaByExample/tree/master/CharacterCounter">CharacterCounter</a> - Zadaniem programu jest zliczanie poszczególnych znaków wprowadzonych przez użytkownika</li>
   <li><a href="https://github.com/TechnologicznaSowa/JavaByExample/tree/master/Fibonacci">Ciąg Fibonacciego</a> - Klasyczne zadanie na trzy sposoby - klasycznie z wykorzystaniem pętli, rekursywnie oraz z użciem stremów. Bonusowo test wydajności poszczególnych metod.</li> 
+  <li><a href="https://github.com/TechnologicznaSowa/JavaByExample/tree/master/quicksort">QuickSort</a> - Metoda sortowania quick sort
 </ul>
